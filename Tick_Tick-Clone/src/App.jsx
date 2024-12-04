@@ -1,14 +1,12 @@
-import React from "react";
-import Nav from "./components/nav/Nav";
-import DropMenu from "./components/dropmenu/DropMenu";
+import "./app.css";
+import MenuBar from "./components/MenuBar/MenuBar";
+import SideBar from "./components/sidebar/SideBar";
 
-const App = () => {
+export function App() {
   return (
-    <div className="flex">
-      <Nav />
-      <DropMenu />
+    <div className="app flex">
+      <SideBar />
+      <MenuBar />
     </div>
   );
-};
-
-export default App;
+}
